@@ -1,0 +1,29 @@
+{
+  "name": "dsh-plugin-video-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Video and audio toolkit for DeepSeek Harness: registers the video-toolkit skill plus video_ops / video_frames tools backed by ffmpeg",
+  "type": "module",
+  "license": "MIT",
+  "author": "Alnyzzz",
+  "main": "./dsh/index.js",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "dsh",
+    "skill",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19"
+  }
+}

@@ -1,0 +1,5 @@
+# dsh bundle layer: mount the video-toolkit plugin. The entry resolves through the
+# package root export (dsh/index.js), which registers the skill and the tools.
+- insert:
+    - id: video-toolkit
+      name: dsh-plugin-video-toolkit
